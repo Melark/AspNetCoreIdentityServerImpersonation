@@ -1,0 +1,26 @@
+﻿@page
+@model IdentityProvider.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+<div class="container">
+    <form method="post">
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input id="Email" name="Email" placeholder="Email" type="email" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label for="Password">Password</label>
+            <input id="Password" name="Password" placeholder="Password" type="password" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-dark">Login</button>
+            <div><span>Don't have an account yet? </span><a asp-page="/Account/Register">Register Here!</a></div>
+        </div>
+    </form>
+</div>
+
